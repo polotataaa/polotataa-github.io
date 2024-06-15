@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<title>Сервисный центр DELL</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__menu">
+			<!--  читала правки ребят про то, что декоративные изображения должны быть фоновыми, можете разъяснить что 
+			  именно относиться к декоративным, я поняла, что это фотография с режимом работы, если это не так то,
+			  что еще должно быть фоновым изображением
+			Также псевдоэлемент для первого left-side__item, я сделала для контейнера left-side__conteiner,
+			чтобы псевдоэлемнт не реагировал когда нажимаешь на кнопку, но если я прописала div контейнер для первого элемента,
+			надо ли такой же контейнер для второго ?
+			Заранее спасибо)   -->
+			<div class="header__left-side left-side">
+				<div class="left-side__conteiner">
+					<button class="left-side__item">
+						<img src="img/burger.svg" alt="Menu">
+					</button>
+				</div>
+				<button class="left-side__item">
+					<img src="img/Group.svg" alt="Logo">
+				</button>
+			</div>
+			<div class="header__center center">
+				<button class="center__item">
+					<img src="img/call.svg" alt="Call">
+				</button>
+				<button class="center__item">
+					<img src="img/chat.svg" alt="Chat">
+				</button>
+				<button class="center__item">
+					<img src="img/profile.svg" alt="">
+				</button>
+			</div>
+			<div class="header__right-side right-side ">
+				<button class="right-side__item">
+					<p class="item__text">Оставить заявку</p>
+					<img src="img/repair.svg" alt="Chat">
+				</button>
+				<button class="right-side__item">
+					<p class="item__text">Статус ремонта</p>
+					<img src="img/checkstatus.svg" alt="">
+				</button>
+			</div>
+		</div>
+		<div class="header__title">
+			<h1 class="title__item">
+				Услуги и сервисы
+			</h1>
+		</div>
+		<nav class="header__nav">
+			<!--также возможно тут у меня проблемы с отсупами, но я вот смотрю на макет и понимаю, что все кнопки там стоят без отступов между друг другом,
+			а стоят рядышком кнопки и внутри них отступы, но разных кнопках разные отступы, я сделала через width: auto или 
+			нужно для каждой кнопки считать ее ширину, подскажите пожалуйста-->
+			<button class="nav__button">
+				<a class="button__link">Ремонтируемые бренды</a>
+			</button>
+			<button class="nav__button">
+				<a class="button__link">Ремонтируемые устройства</a>
+			</button>
+			<button class="nav__button">
+				<a class="button__link">Дополнительные услуги</a>
+			</button>
+			<button class="nav__button">
+				<a class="button__link">Цены на услуги</a>
+			</button>
+			<button class="nav__button">
+				<a class="button__link">Адреса сервисных центров</a>
+			</button>
+			<button class="nav__button">
+				<a class="button__link">Специальные цены</a>
+			</button>
+			<button class="nav__button">
+				<a class="button__link">Отзывы</a>
+			</button>
+		</nav>
+	</header>
+	<main class="main">
+		<div class="conteiner__content">
+			<div class="content__text">
+				<!--также через макет не смогла измерить нормально расстояние
+				между параграфами, сделала на глаз, буду рада,
+				если подскажите как измерить-->
+				<p class="text__item">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+					можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+				<p class="text__item">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+					подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+					рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+			</div>
+			<button class="content__button">
+				<img src="img/expand.svg" alt="Читать далее">
+				<p class="button__text">Читать далее</p>
+			</button>
+		</div>
+
+		<div class="conteiner__image">
+		</div>
+	</main>
+</body>
+
+</html>
