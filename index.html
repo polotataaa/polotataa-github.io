@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
@@ -10,42 +9,33 @@
 <body>
 	<header class="header">
 		<div class="header__menu">
-			<!--  читала правки ребят про то, что декоративные изображения должны быть фоновыми, можете разъяснить что 
-			  именно относиться к декоративным, я поняла, что это фотография с режимом работы, если это не так то,
-			  что еще должно быть фоновым изображением
-			Также псевдоэлемент для первого left-side__item, я сделала для контейнера left-side__conteiner,
-			чтобы псевдоэлемнт не реагировал когда нажимаешь на кнопку, но если я прописала div контейнер для первого элемента,
-			надо ли такой же контейнер для второго ?
-			Заранее спасибо)   -->
+			<!--В .header__menu лучше сохранить компоновку элементов как в макете и просто расположить их, прижав к краям
+			не понимаю, что это значит, вы про то, что я их разделила между собой
+			с помощью space-between ?
+			Добавить минимальную ширину, тоже не поняла, про что именно речь идет,
+			добавить минимальную ширину для мобильных устройств ?
+			Буду рала разяснениям, на самом деле хотела исправить все правки, включая и то, что можно поправить -->
 			<div class="header__left-side left-side">
-				<div class="left-side__conteiner">
-					<button class="left-side__item">
-						<img src="img/burger.svg" alt="Menu">
-					</button>
-				</div>
-				<button class="left-side__item">
-					<img src="img/Group.svg" alt="Logo">
+				<button class="button button--burger">
 				</button>
+				<a class="header__logo" href="#">
+					<img src="img/Group.svg" alt="Logo">
+				</a>
 			</div>
 			<div class="header__center center">
-				<button class="center__item">
-					<img src="img/call.svg" alt="Call">
+				<button class="button button--call">
 				</button>
-				<button class="center__item">
-					<img src="img/chat.svg" alt="Chat">
+				<button class="button button--chat">
 				</button>
-				<button class="center__item">
-					<img src="img/profile.svg" alt="">
+				<button class="button button--profile">
 				</button>
 			</div>
 			<div class="header__right-side right-side ">
-				<button class="right-side__item">
-					<p class="item__text">Оставить заявку</p>
-					<img src="img/repair.svg" alt="Chat">
+				<p class="right-side__text">Оставить заявку</p>
+				<button class="button button--service">
 				</button>
-				<button class="right-side__item">
-					<p class="item__text">Статус ремонта</p>
-					<img src="img/checkstatus.svg" alt="">
+				<p class="right-side__text">Статус ремонта</p>
+				<button class="button button--status">
 				</button>
 			</div>
 		</div>
@@ -55,30 +45,27 @@
 			</h1>
 		</div>
 		<nav class="header__nav">
-			<!--также возможно тут у меня проблемы с отсупами, но я вот смотрю на макет и понимаю, что все кнопки там стоят без отступов между друг другом,
-			а стоят рядышком кнопки и внутри них отступы, но разных кнопках разные отступы, я сделала через width: auto или 
-			нужно для каждой кнопки считать ее ширину, подскажите пожалуйста-->
-			<button class="nav__button">
-				<a class="button__link">Ремонтируемые бренды</a>
-			</button>
-			<button class="nav__button">
-				<a class="button__link">Ремонтируемые устройства</a>
-			</button>
-			<button class="nav__button">
-				<a class="button__link">Дополнительные услуги</a>
-			</button>
-			<button class="nav__button">
-				<a class="button__link">Цены на услуги</a>
-			</button>
-			<button class="nav__button">
-				<a class="button__link">Адреса сервисных центров</a>
-			</button>
-			<button class="nav__button">
-				<a class="button__link">Специальные цены</a>
-			</button>
-			<button class="nav__button">
-				<a class="button__link">Отзывы</a>
-			</button>
+			<!--button__link-->
+			<ol class="nav__slide-list">
+				<li class="nav__item">
+					<a class="nav__text" href="#">Ремонтируемые устройства</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__text" href="#">Дополнительные услуги</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__text" href="#">Цены на услуги</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__text" href="#">Адреса сервисных центров</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__text" href="#">Специальные цены</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__text" href="#">Отзывы</a>
+				</li>
+			</ol>
 		</nav>
 	</header>
 	<main class="main">
@@ -94,14 +81,11 @@
 					рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
 			</div>
 			<button class="content__button">
-				<img src="img/expand.svg" alt="Читать далее">
+				<div class="button__read-more"></div>
 				<p class="button__text">Читать далее</p>
-			</button>
+			</button>	
 		</div>
-
-		<div class="conteiner__image">
-		</div>
+		<img class="content__image" src="img/Picture_Copy.jpg" alt="Content photo">
 	</main>
 </body>
-
 </html>
