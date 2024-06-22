@@ -9,33 +9,27 @@
 <body>
 	<header class="header">
 		<div class="header__menu">
-			<!--В .header__menu лучше сохранить компоновку элементов как в макете и просто расположить их, прижав к краям
-			не понимаю, что это значит, вы про то, что я их разделила между собой
-			с помощью space-between ?
-			Добавить минимальную ширину, тоже не поняла, про что именно речь идет,
-			добавить минимальную ширину для мобильных устройств ?
-			Буду рала разяснениям, на самом деле хотела исправить все правки, включая и то, что можно поправить -->
 			<div class="header__left-side left-side">
-				<button class="button button--burger">
+				<button class="round-icon button--burger">
 				</button>
 				<a class="header__logo" href="#">
 					<img src="img/Group.svg" alt="Logo">
 				</a>
 			</div>
 			<div class="header__center center">
-				<button class="button button--call">
+				<button class="round-icon button--call">
 				</button>
-				<button class="button button--chat">
+				<button class="round-icon button--chat">
 				</button>
-				<button class="button button--profile">
+				<button class="round-icon button--profile">
 				</button>
 			</div>
 			<div class="header__right-side right-side ">
 				<p class="right-side__text">Оставить заявку</p>
-				<button class="button button--service">
+				<button class="round-icon button--service">
 				</button>
 				<p class="right-side__text">Статус ремонта</p>
-				<button class="button button--status">
+				<button class="round-icon button--status">
 				</button>
 			</div>
 		</div>
@@ -48,22 +42,22 @@
 			<!--button__link-->
 			<ol class="nav__slide-list">
 				<li class="nav__item">
-					<a class="nav__text" href="#">Ремонтируемые устройства</a>
+					<a class="nav__link" href="#">Ремонтируемые устройства</a>
 				</li>
 				<li class="nav__item">
-					<a class="nav__text" href="#">Дополнительные услуги</a>
+					<a class="nav__link" href="#">Дополнительные услуги</a>
 				</li>
 				<li class="nav__item">
-					<a class="nav__text" href="#">Цены на услуги</a>
+					<a class="nav__link" href="#">Цены на услуги</a>
 				</li>
 				<li class="nav__item">
-					<a class="nav__text" href="#">Адреса сервисных центров</a>
+					<a class="nav__link" href="#">Адреса сервисных центров</a>
 				</li>
 				<li class="nav__item">
-					<a class="nav__text" href="#">Специальные цены</a>
+					<a class="nav__link" href="#">Специальные цены</a>
 				</li>
 				<li class="nav__item">
-					<a class="nav__text" href="#">Отзывы</a>
+					<a class="nav__link" href="#">Отзывы</a>
 				</li>
 			</ol>
 		</nav>
@@ -80,9 +74,8 @@
 					подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
 					рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
 			</div>
-			<button class="content__button">
-				<div class="button__read-more"></div>
-				<p class="button__text">Читать далее</p>
+			<button class="content__button button--read-more">
+				Читать далее
 			</button>	
 		</div>
 		<img class="content__image" src="img/Picture_Copy.jpg" alt="Content photo">
